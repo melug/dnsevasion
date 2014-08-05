@@ -14,3 +14,5 @@ Run local_dns.py on your local computer. Configure HTTP Service address.
 
 Run dns_service.py on somewhere it can access everything like HEAVEN.
 
+Test command:
+    dig -p 10053 google.com A +short
