@@ -1,0 +1,16 @@
+
+Evasion from DNS blocking.
+
+It's very frustrating when gov blocks domain names. In Mongolia it's happening shit.
+
+This is simple scripts to avoid DNS block. It looks like someone is dropping DNS requests, and forcing people to use their controlled DNS servers. Even blocking google's public dns 8.8.8.8;
+
+local_dns.py listens on port locally. When receives DNS resolution request, it forwards to http service. Which is written in dns_service.py
+
+To install:
+    pip install -r requirements.txt
+
+Run local_dns.py on your local computer. Configure HTTP Service address.
+
+Run dns_service.py on somewhere it can access everything like HEAVEN.
+
